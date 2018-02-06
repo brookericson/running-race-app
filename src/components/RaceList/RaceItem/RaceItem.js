@@ -10,7 +10,7 @@ class RaceItem extends Component {
         };
     }
     componentWillMount(){
-        var url = "https://runsignup.com/Rest/Races/?format=json";
+        var url = "https://runsignup.com/Rest/races/?format=json&events=T&race_headings=F&race_links=F&include_waiver=F&include_event_days=T&page=1&results_per_page=50&sort=name+ASC&start_date=today&only_partner_races=F&search_start_date_only=F&only_races_with_results=F&state=ID&distance_units=K&api_key=bKueVsywo2rxTfZ7Ip2QSP44RR0HFGZz&api_secret=NS4x0tJWMQZpTDJGpkCihtdN0MX5vx5D\n";
         Request.get(url).then((response) => {
             this.setState({
                 races: response
@@ -18,7 +18,7 @@ class RaceItem extends Component {
         })
     }
     componentDidMount() {
-        fetch("https://runsignup.com/Rest/Races/?format=json")
+        fetch("https://runsignup.com/Rest/races/?format=json&events=T&race_headings=F&race_links=F&include_waiver=F&include_event_days=T&page=1&results_per_page=50&sort=name+ASC&start_date=today&only_partner_races=F&search_start_date_only=F&only_races_with_results=F&state=ID&distance_units=K&api_key=bKueVsywo2rxTfZ7Ip2QSP44RR0HFGZz&api_secret=NS4x0tJWMQZpTDJGpkCihtdN0MX5vx5D\n")
             .then(results => {
                 results.json();
             }).then(data => {
