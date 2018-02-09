@@ -4,7 +4,15 @@ import Aux from '../../hoc/Auxx'
 
 const layout = ( props ) => (
     <Aux>
-    <div>navbar, backdrop, login button</div>
+    <header>
+        <nav>
+            <ul>
+                <li>Races</li>
+                <li>Training Plan</li>
+                <li>Sign In</li>
+            </ul>
+        </nav>
+    </header>
     <main className="Content">
     {props.children}
     </main>

@@ -16,10 +16,6 @@ const raceList = (props) => {
   return (
       <div>
           <RaceItem/>
-          <RaceItem/>
-          <RaceItem/>
-          <RaceItem/>
-          <RaceItem/>
       </div>
   );
 };
